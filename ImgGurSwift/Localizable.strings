@@ -1,0 +1,24 @@
+/* 
+  Localizable.strings
+  ImgGurSwift
+
+  Created by Balaji on 26/09/16.
+  Copyright © 2016 Synchronoss. All rights reserved.
+*/
+
+"AUTHORIZATION_REQUIRED_ALERT_TITLE" = "Authorization required";
+"AUTHORIZATION_REQUIRED_ALERT_MESSAGE" = "Inorder to use this application you need to authorize this app using your Imgur account";
+"AUTHORIZATION_REQUIRED_ALERT_BUTTON" = "Ok";
+"SORT_ALERT_TITLE" = "Select Sort option";
+"SORT_OPTION_VIRAL" = "Viral";
+"SORT_OPTION_TOP" = "Top";
+"SORT_OPTION_TIME" = "Time";
+"SECTION_OPTION_HOT" = "Hot";
+"SECTION_OPTION_TOP" = "Top";
+"SECTION_OPTION_USER" = "User";
+"WINDOW_ALERT_TITLE" = "Select window option";
+"WINDOW_OPTION_DAY" = "Day";
+"WINDOW_OPTION_WEEK" = "Week";
+"WINDOW_OPTION_MONTH" = "Month";
+"WINDOW_OPTION_YEAR" = "Year";
+"WINDOW_OPTION_ALL" = "All";

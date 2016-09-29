@@ -1,0 +1,460 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "AuthenticationDidCompleteNotification"
+- "UserSession"
+- "parseUserSession"
+provides-nominal:
+- "V11ImgGurSwift11UserSession"
+provides-member:
+- ["V11ImgGurSwift11UserSession", ""]
+- ["V11ImgGurSwift11UserSession", "archiveAndStoreUserSession"]
+- ["V11ImgGurSwift11UserSession", "userSession"]
+provides-dynamic-lookup:
+depends-top-level:
+- "Int"
+- !private "clientSecret"
+- "UserSession"
+- !private "+"
+- !private "NSUserDefaults"
+- !private "ParameterEncoding"
+- "AuthenticationDidCompleteNotification"
+- !private "print"
+- !private "+="
+- !private "kUserSessionKey"
+- !private "NSNotificationCenter"
+- "String"
+- "Dictionary"
+- "parseUserSession"
+- !private "Alamofire"
+- !private "NSKeyedArchiver"
+- "StringLiteralType"
+- !private "clientId"
+- !private "baseURL"
+- !private "NSData"
+- !private "NSKeyedUnarchiver"
+- !private "=="
+- "AnyObject"
+- "CustomDebugStringConvertible"
+depends-member:
+- !private ["Ps9AnyObject", "URLString"]
+- !private ["Ps9AnyObject", "archivedDataWithRootObject"]
+- !private ["Ps9AnyObject", "defaultCenter"]
+- !private ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "length"]
+- !private ["Ps9AnyObject", "objectForKey"]
+- !private ["Ps9AnyObject", "postNotificationName"]
+- !private ["Ps9AnyObject", "responseJSON"]
+- !private ["Ps9AnyObject", "setObject"]
+- !private ["Ps9AnyObject", "standardUserDefaults"]
+- !private ["Ps9AnyObject", "statusCode"]
+- !private ["Ps9AnyObject", "synchronize"]
+- !private ["Ps9AnyObject", "unarchiveObjectWithData"]
+- !private ["Ps9AnyObject", "validate"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["Sb", "deinit"]
+- !private ["Ps25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps11BooleanType", "_getBuiltinLogicValue"]
+- !private ["Ps11CVarArgType", "URLString"]
+- !private ["Ps11CVarArgType", "archivedDataWithRootObject"]
+- !private ["Ps11CVarArgType", "defaultCenter"]
+- !private ["Ps11CVarArgType", "init"]
+- !private ["Ps11CVarArgType", "length"]
+- !private ["Ps11CVarArgType", "objectForKey"]
+- !private ["Ps11CVarArgType", "postNotificationName"]
+- !private ["Ps11CVarArgType", "setObject"]
+- !private ["Ps11CVarArgType", "standardUserDefaults"]
+- !private ["Ps11CVarArgType", "statusCode"]
+- !private ["Ps11CVarArgType", "synchronize"]
+- !private ["Ps11CVarArgType", "unarchiveObjectWithData"]
+- !private ["Vs9Character", "deinit"]
+- !private ["Ps14CollectionType", "Generator"]
+- !private ["Ps14CollectionType", "Index"]
+- !private ["Ps14CollectionType", "Key"]
+- !private ["Ps14CollectionType", "SubSequence"]
+- !private ["Ps14CollectionType", "Value"]
+- !private ["Ps14CollectionType", "_Element"]
+- !private ["Ps14CollectionType", "subscript"]
+- !private ["Ps10Comparable", "URLString"]
+- !private ["Ps10Comparable", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "Alamofire"]
+- !private ["Ps28CustomDebugStringConvertible", "AuthenticationDidCompleteNotification"]
+- !private ["Ps28CustomDebugStringConvertible", "Index"]
+- !private ["Ps28CustomDebugStringConvertible", "Key"]
+- !private ["Ps28CustomDebugStringConvertible", "NSKeyedArchiver"]
+- !private ["Ps28CustomDebugStringConvertible", "NSKeyedUnarchiver"]
+- !private ["Ps28CustomDebugStringConvertible", "NSNotificationCenter"]
+- !private ["Ps28CustomDebugStringConvertible", "NSUserDefaults"]
+- !private ["Ps28CustomDebugStringConvertible", "ParameterEncoding"]
+- ["Ps28CustomDebugStringConvertible", "Some"]
+- !private ["Ps28CustomDebugStringConvertible", "URLString"]
+- !private ["Ps28CustomDebugStringConvertible", "UserSession"]
+- !private ["Ps28CustomDebugStringConvertible", "Value"]
+- !private ["Ps28CustomDebugStringConvertible", "accessToken"]
+- !private ["Ps28CustomDebugStringConvertible", "accountId"]
+- !private ["Ps28CustomDebugStringConvertible", "accountUserName"]
+- !private ["Ps28CustomDebugStringConvertible", "archiveAndStoreUserSession"]
+- !private ["Ps28CustomDebugStringConvertible", "archivedDataWithRootObject"]
+- !private ["Ps28CustomDebugStringConvertible", "baseURL"]
+- !private ["Ps28CustomDebugStringConvertible", "clientId"]
+- !private ["Ps28CustomDebugStringConvertible", "clientSecret"]
+- !private ["Ps28CustomDebugStringConvertible", "data"]
+- ["Ps28CustomDebugStringConvertible", "debugDescription"]
+- !private ["Ps28CustomDebugStringConvertible", "defaultCenter"]
+- !private ["Ps28CustomDebugStringConvertible", "expiryTime"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "kUserSessionKey"]
+- !private ["Ps28CustomDebugStringConvertible", "length"]
+- !private ["Ps28CustomDebugStringConvertible", "objectForKey"]
+- !private ["Ps28CustomDebugStringConvertible", "parseUserSession"]
+- !private ["Ps28CustomDebugStringConvertible", "postNotificationName"]
+- !private ["Ps28CustomDebugStringConvertible", "print"]
+- !private ["Ps28CustomDebugStringConvertible", "refreshToken"]
+- !private ["Ps28CustomDebugStringConvertible", "request"]
+- !private ["Ps28CustomDebugStringConvertible", "response"]
+- !private ["Ps28CustomDebugStringConvertible", "responseJSON"]
+- !private ["Ps28CustomDebugStringConvertible", "result"]
+- !private ["Ps28CustomDebugStringConvertible", "setObject"]
+- !private ["Ps28CustomDebugStringConvertible", "standardUserDefaults"]
+- !private ["Ps28CustomDebugStringConvertible", "statusCode"]
+- !private ["Ps28CustomDebugStringConvertible", "subscript"]
+- !private ["Ps28CustomDebugStringConvertible", "synchronize"]
+- !private ["Ps28CustomDebugStringConvertible", "tokenType"]
+- !private ["Ps28CustomDebugStringConvertible", "unarchiveObjectWithData"]
+- !private ["Ps28CustomDebugStringConvertible", "userSession"]
+- !private ["Ps28CustomDebugStringConvertible", "validate"]
+- !private ["Ps28CustomDebugStringConvertible", "value"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps23CustomStringConvertible", "Index"]
+- !private ["Ps23CustomStringConvertible", "Key"]
+- !private ["Ps23CustomStringConvertible", "URLString"]
+- !private ["Ps23CustomStringConvertible", "Value"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "archivedDataWithRootObject"]
+- !private ["Ps23CustomStringConvertible", "data"]
+- !private ["Ps23CustomStringConvertible", "defaultCenter"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "length"]
+- !private ["Ps23CustomStringConvertible", "objectForKey"]
+- !private ["Ps23CustomStringConvertible", "postNotificationName"]
+- !private ["Ps23CustomStringConvertible", "request"]
+- !private ["Ps23CustomStringConvertible", "response"]
+- !private ["Ps23CustomStringConvertible", "responseJSON"]
+- !private ["Ps23CustomStringConvertible", "result"]
+- !private ["Ps23CustomStringConvertible", "setObject"]
+- !private ["Ps23CustomStringConvertible", "standardUserDefaults"]
+- !private ["Ps23CustomStringConvertible", "statusCode"]
+- !private ["Ps23CustomStringConvertible", "subscript"]
+- !private ["Ps23CustomStringConvertible", "synchronize"]
+- !private ["Ps23CustomStringConvertible", "unarchiveObjectWithData"]
+- !private ["Ps23CustomStringConvertible", "validate"]
+- !private ["Ps23CustomStringConvertible", "value"]
+- !private ["Vs10Dictionary", "Index"]
+- !private ["Vs10Dictionary", "Key"]
+- !private ["Vs10Dictionary", "Value"]
+- !private ["Vs10Dictionary", "deinit"]
+- !private ["Vs10Dictionary", "subscript"]
+- !private ["Ps28DictionaryLiteralConvertible", "Index"]
+- !private ["Ps28DictionaryLiteralConvertible", "Key"]
+- !private ["Ps28DictionaryLiteralConvertible", "Value"]
+- !private ["Ps28DictionaryLiteralConvertible", "subscript"]
+- !private ["Sd", "deinit"]
+- !private ["Ps9Equatable", "POST"]
+- !private ["Ps9Equatable", "URLString"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "archivedDataWithRootObject"]
+- !private ["Ps9Equatable", "defaultCenter"]
+- !private ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "length"]
+- !private ["Ps9Equatable", "objectForKey"]
+- !private ["Ps9Equatable", "postNotificationName"]
+- !private ["Ps9Equatable", "setObject"]
+- !private ["Ps9Equatable", "standardUserDefaults"]
+- !private ["Ps9Equatable", "statusCode"]
+- !private ["Ps9Equatable", "synchronize"]
+- !private ["Ps9Equatable", "unarchiveObjectWithData"]
+- !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "URLString"]
+- !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["Sf", "deinit"]
+- !private ["Ps13GeneratorType", "Element"]
+- !private ["Ps8Hashable", "POST"]
+- !private ["Ps8Hashable", "URLString"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "archivedDataWithRootObject"]
+- !private ["Ps8Hashable", "defaultCenter"]
+- !private ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "length"]
+- !private ["Ps8Hashable", "objectForKey"]
+- !private ["Ps8Hashable", "postNotificationName"]
+- !private ["Ps8Hashable", "setObject"]
+- !private ["Ps8Hashable", "standardUserDefaults"]
+- !private ["Ps8Hashable", "statusCode"]
+- !private ["Ps8Hashable", "synchronize"]
+- !private ["Ps8Hashable", "unarchiveObjectWithData"]
+- !private ["Ps9Indexable", "Generator"]
+- !private ["Ps9Indexable", "Index"]
+- !private ["Ps9Indexable", "Key"]
+- !private ["Ps9Indexable", "SubSequence"]
+- !private ["Ps9Indexable", "Value"]
+- !private ["Ps9Indexable", "_Element"]
+- !private ["Ps9Indexable", "subscript"]
+- !private ["Vs17IndexingGenerator", "Element"]
+- !private ["Si", "deinit"]
+- !private ["Vs5Int16", "deinit"]
+- !private ["Vs5Int32", "deinit"]
+- !private ["Vs5Int64", "deinit"]
+- !private ["Vs4Int8", "deinit"]
+- !private ["O9Alamofire6Method", "POST"]
+- !private ["Ps14MirrorPathType", "URLString"]
+- !private ["Ps14MirrorPathType", "init"]
+- !private ["CSo7NSCoder", "archivedDataWithRootObject"]
+- !private ["CSo7NSCoder", "unarchiveObjectWithData"]
+- !private ["PSo8NSCoding", "URLString"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "length"]
+- !private ["PSo8NSCoding", "statusCode"]
+- !private ["PSo9NSCopying", "URLString"]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo9NSCopying", "length"]
+- !private ["PSo9NSCopying", "statusCode"]
+- !private ["CSo6NSData", "length"]
+- !private ["CSo17NSHTTPURLResponse", "statusCode"]
+- !private ["CSo15NSKeyedArchiver", "archivedDataWithRootObject"]
+- !private ["CSo17NSKeyedUnarchiver", "unarchiveObjectWithData"]
+- !private ["PSo16NSMutableCopying", "URLString"]
+- !private ["PSo16NSMutableCopying", "init"]
+- !private ["PSo16NSMutableCopying", "length"]
+- !private ["CSo20NSNotificationCenter", "defaultCenter"]
+- !private ["CSo20NSNotificationCenter", "postNotificationName"]
+- !private ["CSo8NSObject", "URLString"]
+- !private ["CSo8NSObject", "archivedDataWithRootObject"]
+- !private ["CSo8NSObject", "defaultCenter"]
+- !private ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "length"]
+- !private ["CSo8NSObject", "objectForKey"]
+- !private ["CSo8NSObject", "postNotificationName"]
+- !private ["CSo8NSObject", "setObject"]
+- !private ["CSo8NSObject", "standardUserDefaults"]
+- !private ["CSo8NSObject", "statusCode"]
+- !private ["CSo8NSObject", "synchronize"]
+- !private ["CSo8NSObject", "unarchiveObjectWithData"]
+- !private ["PSo16NSObjectProtocol", "URLString"]
+- !private ["PSo16NSObjectProtocol", "archivedDataWithRootObject"]
+- !private ["PSo16NSObjectProtocol", "defaultCenter"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "length"]
+- !private ["PSo16NSObjectProtocol", "objectForKey"]
+- !private ["PSo16NSObjectProtocol", "postNotificationName"]
+- !private ["PSo16NSObjectProtocol", "setObject"]
+- !private ["PSo16NSObjectProtocol", "standardUserDefaults"]
+- !private ["PSo16NSObjectProtocol", "statusCode"]
+- !private ["PSo16NSObjectProtocol", "synchronize"]
+- !private ["PSo16NSObjectProtocol", "unarchiveObjectWithData"]
+- !private ["PSo14NSSecureCoding", "URLString"]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["PSo14NSSecureCoding", "length"]
+- !private ["PSo14NSSecureCoding", "statusCode"]
+- !private ["CSo8NSString", "URLString"]
+- !private ["CSo8NSString", "deinit"]
+- !private ["CSo8NSString", "init"]
+- !private ["CSo13NSURLResponse", "statusCode"]
+- !private ["CSo14NSUserDefaults", "objectForKey"]
+- !private ["CSo14NSUserDefaults", "setObject"]
+- !private ["CSo14NSUserDefaults", "standardUserDefaults"]
+- !private ["CSo14NSUserDefaults", "synchronize"]
+- ["Ps21NilLiteralConvertible", "Some"]
+- ["Sq", "Some"]
+- !private ["Sq", "deinit"]
+- !private ["Ps16OutputStreamType", "URLString"]
+- !private ["Ps16OutputStreamType", "init"]
+- !private ["O9Alamofire17ParameterEncoding", "JSON"]
+- !private ["Ps16RawRepresentable", "POST"]
+- !private ["C9Alamofire7Request", "responseJSON"]
+- !private ["C9Alamofire7Request", "validate"]
+- !private ["V9Alamofire8Response", "data"]
+- !private ["V9Alamofire8Response", "request"]
+- !private ["V9Alamofire8Response", "response"]
+- !private ["V9Alamofire8Response", "result"]
+- !private ["O9Alamofire6Result", "value"]
+- !private ["Ps12SequenceType", "Element"]
+- !private ["Ps12SequenceType", "Generator"]
+- !private ["Ps12SequenceType", "Index"]
+- !private ["Ps12SequenceType", "Key"]
+- !private ["Ps12SequenceType", "SubSequence"]
+- !private ["Ps12SequenceType", "Value"]
+- !private ["Ps12SequenceType", "_Element"]
+- !private ["Ps12SequenceType", "subscript"]
+- !private ["Vs5Slice", "Generator"]
+- !private ["Vs5Slice", "Index"]
+- !private ["Vs5Slice", "SubSequence"]
+- !private ["Vs5Slice", "_Element"]
+- !private ["Ps10Streamable", "URLString"]
+- !private ["Ps10Streamable", "init"]
+- !private ["SS", "URLString"]
+- !private ["SS", "init"]
+- !private ["Ps30StringInterpolationConvertible", "URLString"]
+- !private ["Ps30StringInterpolationConvertible", "init"]
+- !private ["Ps24StringLiteralConvertible", "URLString"]
+- !private ["Ps24StringLiteralConvertible", "init"]
+- !private ["Su", "deinit"]
+- !private ["Vs6UInt16", "deinit"]
+- !private ["Vs6UInt32", "deinit"]
+- !private ["Vs6UInt64", "deinit"]
+- !private ["Vs5UInt8", "deinit"]
+- !private ["P9Alamofire20URLStringConvertible", "URLString"]
+- !private ["P9Alamofire20URLStringConvertible", "init"]
+- !private ["Sc", "deinit"]
+- !private ["Ps31UnicodeScalarLiteralConvertible", "URLString"]
+- !private ["Ps31UnicodeScalarLiteralConvertible", "init"]
+- !private ["V11ImgGurSwift11UserSession", "Alamofire"]
+- ["V11ImgGurSwift11UserSession", "AnyObject"]
+- !private ["V11ImgGurSwift11UserSession", "AuthenticationDidCompleteNotification"]
+- ["V11ImgGurSwift11UserSession", "Int"]
+- !private ["V11ImgGurSwift11UserSession", "NSData"]
+- !private ["V11ImgGurSwift11UserSession", "NSKeyedArchiver"]
+- !private ["V11ImgGurSwift11UserSession", "NSKeyedUnarchiver"]
+- !private ["V11ImgGurSwift11UserSession", "NSNotificationCenter"]
+- !private ["V11ImgGurSwift11UserSession", "NSUserDefaults"]
+- !private ["V11ImgGurSwift11UserSession", "ParameterEncoding"]
+- ["V11ImgGurSwift11UserSession", "String"]
+- ["V11ImgGurSwift11UserSession", "UserSession"]
+- ["V11ImgGurSwift11UserSession", "accessToken"]
+- ["V11ImgGurSwift11UserSession", "accountId"]
+- ["V11ImgGurSwift11UserSession", "accountUserName"]
+- ["V11ImgGurSwift11UserSession", "archiveAndStoreUserSession"]
+- ["V11ImgGurSwift11UserSession", "authenticateUser"]
+- !private ["V11ImgGurSwift11UserSession", "baseURL"]
+- !private ["V11ImgGurSwift11UserSession", "clientId"]
+- !private ["V11ImgGurSwift11UserSession", "clientSecret"]
+- ["V11ImgGurSwift11UserSession", "debugDescription"]
+- ["V11ImgGurSwift11UserSession", "deinit"]
+- ["V11ImgGurSwift11UserSession", "expiryTime"]
+- ["V11ImgGurSwift11UserSession", "fetchAccessToken"]
+- ["V11ImgGurSwift11UserSession", "init"]
+- !private ["V11ImgGurSwift11UserSession", "kUserSessionKey"]
+- !private ["V11ImgGurSwift11UserSession", "parseUserSession"]
+- !private ["V11ImgGurSwift11UserSession", "print"]
+- ["V11ImgGurSwift11UserSession", "refreshToken"]
+- ["V11ImgGurSwift11UserSession", "tokenType"]
+- ["V11ImgGurSwift11UserSession", "userSession"]
+- !private ["Ps33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible", "URLString"]
+- !private ["Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["Ps32_BuiltinStringLiteralConvertible", "URLString"]
+- !private ["Ps32_BuiltinStringLiteralConvertible", "init"]
+- !private ["Ps37_BuiltinUTF16StringLiteralConvertible", "URLString"]
+- !private ["Ps37_BuiltinUTF16StringLiteralConvertible", "init"]
+- !private ["Ps39_BuiltinUnicodeScalarLiteralConvertible", "URLString"]
+- !private ["Ps39_BuiltinUnicodeScalarLiteralConvertible", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "Index"]
+- !private ["Ps21_ObjectiveCBridgeable", "Key"]
+- !private ["Ps21_ObjectiveCBridgeable", "URLString"]
+- !private ["Ps21_ObjectiveCBridgeable", "Value"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "subscript"]
+- !private ["Vs26_OptionalNilComparisonType", "deinit"]
+- !private ["Ps12_Reflectable", "Index"]
+- !private ["Ps12_Reflectable", "Key"]
+- ["Ps12_Reflectable", "Some"]
+- !private ["Ps12_Reflectable", "URLString"]
+- !private ["Ps12_Reflectable", "Value"]
+- !private ["Ps12_Reflectable", "_getBuiltinLogicValue"]
+- !private ["Ps12_Reflectable", "init"]
+- !private ["Ps12_Reflectable", "subscript"]
+depends-nominal:
+- !private "Ps9AnyObject"
+- !private "Sb"
+- !private "Ps25BooleanLiteralConvertible"
+- !private "Ps11BooleanType"
+- !private "Ps11CVarArgType"
+- !private "Vs9Character"
+- !private "Ps14CollectionType"
+- !private "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- !private "Ps23CustomStringConvertible"
+- !private "Vs10Dictionary"
+- !private "Ps28DictionaryLiteralConvertible"
+- !private "Sd"
+- !private "Ps9Equatable"
+- !private "Ps41ExtendedGraphemeClusterLiteralConvertible"
+- !private "Sf"
+- !private "Ps13GeneratorType"
+- !private "Ps8Hashable"
+- !private "Ps9Indexable"
+- !private "Vs17IndexingGenerator"
+- !private "Si"
+- !private "Vs5Int16"
+- !private "Vs5Int32"
+- !private "Vs5Int64"
+- !private "Vs4Int8"
+- !private "O9Alamofire6Method"
+- !private "Ps14MirrorPathType"
+- !private "CSo7NSCoder"
+- !private "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- !private "CSo6NSData"
+- !private "CSo17NSHTTPURLResponse"
+- !private "CSo15NSKeyedArchiver"
+- !private "CSo17NSKeyedUnarchiver"
+- !private "PSo16NSMutableCopying"
+- !private "CSo20NSNotificationCenter"
+- !private "CSo8NSObject"
+- !private "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
+- !private "CSo13NSURLResponse"
+- !private "CSo14NSUserDefaults"
+- "Ps21NilLiteralConvertible"
+- "Sq"
+- !private "Ps16OutputStreamType"
+- !private "O9Alamofire17ParameterEncoding"
+- !private "Ps16RawRepresentable"
+- !private "C9Alamofire7Request"
+- !private "V9Alamofire8Response"
+- !private "O9Alamofire6Result"
+- !private "Ps12SequenceType"
+- !private "Vs5Slice"
+- !private "Ps10Streamable"
+- !private "SS"
+- !private "Ps30StringInterpolationConvertible"
+- !private "Ps24StringLiteralConvertible"
+- !private "Su"
+- !private "Vs6UInt16"
+- !private "Vs6UInt32"
+- !private "Vs6UInt64"
+- !private "Vs5UInt8"
+- !private "P9Alamofire20URLStringConvertible"
+- !private "Sc"
+- !private "Ps31UnicodeScalarLiteralConvertible"
+- "V11ImgGurSwift11UserSession"
+- !private "Ps33_BuiltinBooleanLiteralConvertible"
+- !private "Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible"
+- !private "Ps32_BuiltinStringLiteralConvertible"
+- !private "Ps37_BuiltinUTF16StringLiteralConvertible"
+- !private "Ps39_BuiltinUnicodeScalarLiteralConvertible"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Vs26_OptionalNilComparisonType"
+- "Ps12_Reflectable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/balaji/Documents/Samples/ImgGurSwift/ImgGurSwift-Bridging-Header.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Users/balaji/Documents/Samples/ImgGurSwift/DerivedData/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Modules/Alamofire.swiftmodule/x86_64.swiftmodule"
+- "/Users/balaji/Documents/Samples/ImgGurSwift/DerivedData/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Headers/Alamofire-Swift.h"
+- "/Users/balaji/Documents/Samples/ImgGurSwift/DerivedData/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Headers/Alamofire-umbrella.h"
+- "/Users/balaji/Documents/Samples/ImgGurSwift/DerivedData/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Modules/module.modulemap"
+- "/Users/balaji/Documents/Samples/ImgGurSwift/DerivedData/Build/Products/Debug-iphonesimulator/MBProgressHUD/MBProgressHUD.framework/Headers/MBProgressHUD.h"
+- "/Users/balaji/Documents/Samples/ImgGurSwift/DerivedData/Build/Products/Debug-iphonesimulator/MBProgressHUD/MBProgressHUD.framework/Headers/MBProgressHUD-umbrella.h"
+- "/Users/balaji/Documents/Samples/ImgGurSwift/DerivedData/Build/Products/Debug-iphonesimulator/MBProgressHUD/MBProgressHUD.framework/Modules/module.modulemap"
+- "/Users/balaji/Documents/Samples/ImgGurSwift/DerivedData/Build/Products/Debug-iphonesimulator/AlamofireImage/AlamofireImage.framework/Modules/AlamofireImage.swiftmodule/x86_64.swiftmodule"
+- "/Users/balaji/Documents/Samples/ImgGurSwift/DerivedData/Build/Products/Debug-iphonesimulator/AlamofireImage/AlamofireImage.framework/Headers/AlamofireImage-Swift.h"
+- "/Users/balaji/Documents/Samples/ImgGurSwift/DerivedData/Build/Products/Debug-iphonesimulator/AlamofireImage/AlamofireImage.framework/Headers/AlamofireImage-umbrella.h"
+- "/Users/balaji/Documents/Samples/ImgGurSwift/DerivedData/Build/Products/Debug-iphonesimulator/AlamofireImage/AlamofireImage.framework/Modules/module.modulemap"
+interface-hash: "ab1099828a4d4154df8742e7fcbf6aa9"

@@ -1,0 +1,1 @@
+ const unsigned char Pods_ImgGurSwiftVersionString[] __attribute__ ((used)) = "@(#)PROGRAM:Pods_ImgGurSwift  PROJECT:Pods-1" "\n"; const double Pods_ImgGurSwiftVersionNumber __attribute__ ((used)) = (double)1.;

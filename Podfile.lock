@@ -1,0 +1,22 @@
+PODS:
+  - ActionSheetPicker-3.0 (2.1.0)
+  - Alamofire (3.5.0)
+  - AlamofireImage (2.5.0):
+    - Alamofire (~> 3.5)
+  - MBProgressHUD (0.9.2)
+
+DEPENDENCIES:
+  - ActionSheetPicker-3.0
+  - Alamofire (~> 3.5.0)
+  - AlamofireImage (~> 2.5.0)
+  - MBProgressHUD (~> 0.9.2)
+
+SPEC CHECKSUMS:
+  ActionSheetPicker-3.0: db66605feb85689279d328206c61f0e4f398df92
+  Alamofire: b70a7352335f8ea5babd0a923eb7e8eacc67b877
+  AlamofireImage: 2d34936e5201270bb17a316a786e90e83b4a249d
+  MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
+
+PODFILE CHECKSUM: ecb5f53cc0a7ae0bcfc3df08fbf8c1aa2a66ffa3
+
+COCOAPODS: 1.0.1
