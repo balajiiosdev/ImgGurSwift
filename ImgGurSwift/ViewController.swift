@@ -61,7 +61,7 @@ class ViewController: UIViewController  {
     @IBOutlet weak var collectionView: UICollectionView!
     
     //private variable
-    var feedArray : Array<GalleryImage>?
+    var feedArray : Array<Gallery>?
     var sortOption : String?
     var section : String?
     var window : String?
@@ -127,18 +127,12 @@ class ViewController: UIViewController  {
             self.HUD.mode = .Indeterminate
             self.HUD.labelText = "Loading gallery"
         });
-        
-        APIManager.sharedInstance.fetchGallery { (gallery) in
-            print("success")
-            if let results = gallery {
-                self.feedArray = results
-            }
-            
+        Gallery.fetchGallery { (gallery) in
+            self.feedArray = gallery
             dispatch_async(dispatch_get_main_queue(), {
                 self.HUD.hide(true)
                 self.collectionView.reloadData()
             })
-            
         }
     }
     
@@ -215,7 +209,8 @@ extension ViewController : UICollectionViewDataSource, CHTCollectionViewDelegate
                     print("\(response.request?.URLString) response \(response.response?.statusCode)")
                 })
             }
-        }
+        }        
+        
         return cell;
     }
     

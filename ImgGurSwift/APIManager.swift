@@ -82,51 +82,51 @@ class APIManager {
     func parseGallery(results: [[String: AnyObject]]) -> [GalleryImage] {
         var galleryList = [GalleryImage]()
         let pureImages = results.filter { (galleryDict) -> Bool in
-            return galleryDict["is_album"]?.boolValue == false
+            return galleryDict[GalleryFields.Animated.rawValue]?.boolValue == false
         }
         for gallery in pureImages {
             let galleryImage = GalleryImage()
-            if let id = gallery["id"] as? String {
+            if let id = gallery[GalleryFields.Id.rawValue] as? String {
                 galleryImage.identifier = id
             }
             
-            if let title = gallery["title"] as? String {
+            if let title = gallery[GalleryFields.Title.rawValue] as? String {
                 galleryImage.title = title
             }
             
-            if let description = gallery["description"] as? String {
+            if let description = gallery[GalleryFields.Description.rawValue] as? String {
                 galleryImage.imageDescription = description
             }
             
-            if let ups = gallery["ups"] as? Int {
+            if let ups = gallery[GalleryFields.Ups.rawValue] as? Int {
                 galleryImage.upVotes = ups
             }
             
-            if let downs = gallery["downs"] as? Int {
+            if let downs = gallery[GalleryFields.Downs.rawValue] as? Int {
                 galleryImage.downVotes = downs
             }
             
-            if let points = gallery["points"] as? Int {
+            if let points = gallery[GalleryFields.Points.rawValue] as? Int {
                 galleryImage.points = points
             }
             
-            if let link = gallery["link"] as? String {
+            if let link = gallery[GalleryFields.Link.rawValue] as? String {
                 galleryImage.link = link
             }
             
-            if let type = gallery["type"] as? String {
+            if let type = gallery[GalleryFields.TYPE.rawValue] as? String {
                 galleryImage.type = type
             }
             
-            if let width = gallery["width"] as? Int {
+            if let width = gallery[GalleryFields.Width.rawValue] as? Int {
                 galleryImage.width = width
             }
             
-            if let height = gallery["height"] as? Int {
+            if let height = gallery[GalleryFields.Height.rawValue] as? Int {
                 galleryImage.height = height
             }
             
-            if let animated = gallery["animated"] {
+            if let animated = gallery[GalleryFields.Animated.rawValue] {
                 galleryImage.animated = animated as! Bool
             }
             galleryList.append(galleryImage)

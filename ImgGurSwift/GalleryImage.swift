@@ -9,7 +9,6 @@
 import Foundation
 
 class GalleryImage {
-    //TODO:: Create isAnimated getter method for this property
     var animated: Bool = false
     var imageDescription : String?
     var upVotes : Int?

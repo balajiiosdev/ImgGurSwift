@@ -10,4 +10,5 @@ target 'ImgGurSwift' do
     pod 'AlamofireImage', '~> 2.5.0'
     pod 'ActionSheetPicker-3.0'
     pod 'MBProgressHUD', '~> 0.9.2'
+    pod 'SwiftyJSON', '~> 2.3'
 end

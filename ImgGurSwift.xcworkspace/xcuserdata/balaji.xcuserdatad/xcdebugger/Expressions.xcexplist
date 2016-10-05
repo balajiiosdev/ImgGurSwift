@@ -3,6 +3,17 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "static Gallery.(fetchGallery(Section, sort : Sort, page : Int, window : Window, showViral : Bool, completionHandler : (gallery : [Gallery]?) -&gt; ()) -&gt; ()).(closure #1):Gallery.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "galleryArray[i]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "static Gallery.(fetchGallery(Section, sort : Sort, page : Int, window : Window, showViral : Bool, completionHandler : (gallery : [GalleryImage]?) -&gt; ()) -&gt; ()).(closure #1):Gallery.swift">
+      </ContextState>
+      <ContextState
          contextName = "Manager.request(Method, URLStringConvertible, parameters : [String : AnyObject]?, encoding : ParameterEncoding, headers : [String : String]?) -&gt; Request:Manager.swift">
          <PersistentStrings>
             <PersistentString
