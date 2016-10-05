@@ -3,7 +3,7 @@
 //  ImgGurSwift
 //
 //  Created by Balaji on 24/09/16.
-//  Copyright © 2016 Synchronoss. All rights reserved.
+//  Copyright © 2016 Balaji. All rights reserved.
 //
 
 import Foundation
