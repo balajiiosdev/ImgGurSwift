@@ -30,7 +30,6 @@ extension Bool {
 }
 
 class APIManager {
-    
     static let sharedInstance = APIManager()
     private init() { }
     
@@ -39,99 +38,4 @@ class APIManager {
         let url = NSURL(string: urlString)
         UIApplication.sharedApplication().openURL(url!)
     }
-    
-    func fetchGallery(section: Section = .Hot,
-                      sort: Sort = .Viral,
-                      page :Int = 1,
-                      window: Window = .Day,
-                      showViral: Bool = false, completionHandler: (gallery: [GalleryImage]?)-> Void) {
-        var urlString = baseURLWithVersion+"/gallery";
-        urlString += "/\(section.rawValue)"
-        urlString += "/\(sort.rawValue)"
-        urlString += "/\(window.rawValue)"
-        urlString += "/\(page)"
-        urlString += "?showViral=\(showViral.stringValue)"
-        
-        guard let accessToken = UserSession().userSession()?.accessToken else {
-            return completionHandler(gallery: nil)
-        }
-        let headerFields = ["Authorization" : "Bearer \(accessToken)"]
-        Alamofire.request(.GET, urlString.URLString, parameters: nil, encoding: .JSON, headers: headerFields).validate().responseJSON(completionHandler: { (response) in
-            print(response.request)  // original URL request
-            print(response.response) // HTTP URL response
-            print(response.data?.length)     // server data
-            print(response.result)   // result of response serialization
-            if response.response?.statusCode == 200 {
-                guard let JSON = response.result.value as? [String: AnyObject] else {
-                    print("No valid JSON")
-                    return completionHandler(gallery: nil)
-                }
-                //print("JSON: \(JSON)")
-                
-                guard let data = JSON["data"] as? [[String: AnyObject]] else {
-                    print("'data' not found")
-                    return completionHandler(gallery: nil)
-                }
-                
-                let galleryList = self.parseGallery(data)
-                completionHandler(gallery: galleryList)
-            }
-        })
-    }
-    
-    func parseGallery(results: [[String: AnyObject]]) -> [GalleryImage] {
-        var galleryList = [GalleryImage]()
-        let pureImages = results.filter { (galleryDict) -> Bool in
-            return galleryDict[GalleryFields.Animated.rawValue]?.boolValue == false
-        }
-        for gallery in pureImages {
-            let galleryImage = GalleryImage()
-            if let id = gallery[GalleryFields.Id.rawValue] as? String {
-                galleryImage.identifier = id
-            }
-            
-            if let title = gallery[GalleryFields.Title.rawValue] as? String {
-                galleryImage.title = title
-            }
-            
-            if let description = gallery[GalleryFields.Description.rawValue] as? String {
-                galleryImage.imageDescription = description
-            }
-            
-            if let ups = gallery[GalleryFields.Ups.rawValue] as? Int {
-                galleryImage.upVotes = ups
-            }
-            
-            if let downs = gallery[GalleryFields.Downs.rawValue] as? Int {
-                galleryImage.downVotes = downs
-            }
-            
-            if let points = gallery[GalleryFields.Points.rawValue] as? Int {
-                galleryImage.points = points
-            }
-            
-            if let link = gallery[GalleryFields.Link.rawValue] as? String {
-                galleryImage.link = link
-            }
-            
-            if let type = gallery[GalleryFields.TYPE.rawValue] as? String {
-                galleryImage.type = type
-            }
-            
-            if let width = gallery[GalleryFields.Width.rawValue] as? Int {
-                galleryImage.width = width
-            }
-            
-            if let height = gallery[GalleryFields.Height.rawValue] as? Int {
-                galleryImage.height = height
-            }
-            
-            if let animated = gallery[GalleryFields.Animated.rawValue] {
-                galleryImage.animated = animated as! Bool
-            }
-            galleryList.append(galleryImage)
-        }
-        return galleryList
-    }
-
 }
